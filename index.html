@@ -13,21 +13,136 @@
     <aside class="sidebar">
         <div class="logo">ARC</div>
         <nav>
-            <a class="nav-links link"><img> Overview</a>
-            <a class="nav-links link"><img> Projects</a>
-            <a class="nav-links link"><img> Clients</a>
-            <a class="nav-links link"><img> Team</a>
-            <a class="nav-links link"><img> Files</a>
-            <a class="nav-links link"><img> Calendar</a>
+            <a class="nav-links link"><img src=""> Overview</a>
+            <a class="nav-links link"><img src=""> Projects</a>
+            <a class="nav-links link"><img src=""> Clients</a>
+            <a class="nav-links link"><img src=""> Team</a>
+            <a class="nav-links link"><img src=""> Files</a>
+            <a class="nav-links link"><img src=""> Calendar</a>
         </nav>
-        <a class="sidebar-links link"><img> Settings</a>
-        <a class="sidebar-links link"><img> Help</a>
+        <a class="sidebar-links link"><img src=""> Settings</a>
+        <a class="sidebar-links link"><img src=""> Help</a>
     </aside>
     <main>
-        <header>
-        
+        <header class="header">
+                <input type="search" placeholder="Search">
+                <div class="notification"><img class="notification-icon">N</div>
+                <div class="profile"><img class="profile-icon">P</div>
         </header>
+        <div class="greeting">
+            <img class="profile-icon">
+            <h1>Good Morning, Odin</h1>
+            <div>
+                <button>Edit Projects</button>
+                <button> Edit Clients</button>
+                <button>Schedule Meeting</button>
+            </div>
+        </div>
+        <section class="overview">
+            <div class="overview-card">Active Projects <span>08</span></div>
+            <div class="overview-card">Upcoming Deadlines <span>03</span></div>
+            <div class="overview-card">Team Members <span>12</span></div>
+        </section>
+        <section class="active-projects">
+            <h2>Active Projects</h2>
+            <div class="project-card">
+                <a class="project-name"><h3>Casa Nera</h3></a>
+                <p class="project-type">Residential · Mumbai, India</p>
+                <div class="progress-bar">
 
+                </div>
+                <p class="deadline">Sep 18</p>
+            </div>
+            <div class="project-card">
+                <a class="project-name"><h3>Kumo House</h3></a>
+                <p class="project-type">Residential · Kyoto, Japan</p>
+                <div class="progress-bar">
+                    
+                </div>
+                <p class="deadline">Oct 07</p>
+            </div>
+            <div class="project-card">
+                <a class="project-name"><h3>Forma Offices</h3></a>
+                <p class="project-type">Commercial · London, United Kingdom</p>
+                <div class="progress-bar">
+                    
+                </div>
+                <p class="deadline">Oct 24</p>
+            </div>
+            <div class="project-card">
+                <a class="project-name"><h3>Mizu Pavilion</h3></a>
+                <p class="project-type">Residential · Tokyo, Japan</p>
+                <div class="progress-bar">
+                    
+                </div>
+                <p class="deadline">Nov 11</p>
+            </div>
+            <div class="project-card">
+                <a class="project-name"><h3>Atelier 04</h3></a>
+                <p class="project-type">Commercial · Paris, France</p>
+                <div class="progress-bar">
+                    
+                </div>
+                <p class="deadline">Nov 28</p>
+            </div>
+            <div class="project-card">
+                <a class="project-name"><h3>Villa No. 7</h3></a>
+                <p class="project-type">Residential · Goa, India</p>
+                <div class="progress-bar">
+                    
+                </div>
+                <p class="deadline">Dec 16</p>
+            </div>
+            <div class="project-card">
+                <a class="project-name"><h3>Aster House</h3></a>
+                <p class="project-type">Residential · Copenhagen, Denmark</p>
+                <div class="progress-bar">
+                    
+                </div>
+                <p class="deadline">Jan 09</p>
+            </div>
+            <div class="project-card">
+                <a class="project-name"><h3>Linea Gallery</h3></a>
+                <p class="project-type">Commercial · Milan, Italy</p>
+                <div class="progress-bar">
+                    
+                </div>
+                <p class="deadline">Jan 29</p>
+            </div>
+        </section>
+        <section class="schedule">
+            <h2>Upcoming Deadlines</h2>
+            <div class=schedule-card">
+                <p class="project">Casa Nera</p>
+                <p class="event">Site Visit</p>
+                <p class="date">Sep 18</p>
+            </div>
+            <div class=schedule-card">
+                <p class="project">Kumo House</p>
+                <p class="event">Material Review</p>
+                <p class="date">Oct 07</p>
+            </div>
+            <div class=schedule-card">
+                <p class="project">Forma Offices</p>
+                <p class="event">Client Presentation</p>
+                <p class="date">Oct 24</p>
+            </div>
+        </section>
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+            <div class="recent-activity-card">
+                <p class="activity">Maya uploaded new floor plans for Casa Nera</p>
+            </div>
+            <div class="recent-activity-card">
+                <p class="activity">Client approved the material selection for Kumo House</p>
+            </div>
+            <div class="recent-activity-card">
+                <p class="activity">Daniel added a new render to Forma Offices</p>
+            </div>
+            <div class="recent-activity-card">
+                <p class="activity">Sofia updated the project timeline for Mizu Pavilion</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
