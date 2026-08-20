@@ -243,6 +243,13 @@ button[type="submit"] {
     align-items: center;
 }
 
+.schedule-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
 .project-card,
 .schedule-card,
 .recent-activity-card {
