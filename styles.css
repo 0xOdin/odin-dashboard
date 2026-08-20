@@ -22,10 +22,17 @@ main {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
 }
 
-.card {
-    background-color: #FFFFFF;
+
+
+.profile-icon,
+.header-profile-icon {
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -91,7 +98,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .left-side,
@@ -125,10 +132,6 @@ button[type="submit"] {
     border: none;
 }
 
-.header-username {
-    font-size: 1rem;
-}
-
 .header-profile-icon {
     border: 2px solid #E3DED6;
     width: 36px;
@@ -140,9 +143,9 @@ button[type="submit"] {
 
 .dashboard-intro {
     grid-column: 1 / 3;
+    grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
 }
 
 .left-side-intro,
@@ -181,10 +184,65 @@ button[type="submit"] {
 
 .overview {
     grid-column: 1 / 3;
-    margin: 0 100px;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
+    column-gap: 100px;
+}
+
+/* Active Projects */ 
+
+.active-projects {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 40px;
+    grid-auto-rows: 200px;
+    gap: 20px;
+}
+
+.active-projects h2 {
+    grid-column: 1 / -1;
+}
+
+/* Schedule */
+
+.schedule {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-rows: 40px repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+/* Recent Activity */
+
+.recent-activity {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-rows: 40px repeat(auto-fit, minmax(20px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+
+.project-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    align-items: center;
+}
+
+.project-card,
+.schedule-card,
+.recent-activity-card {
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.card {
+    background-color: #FFFFFF;
 }
 
 .overview-card {
@@ -192,61 +250,23 @@ button[type="submit"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 14px;
     border-radius: 12px;
     font-size: 1.2rem;
 }
 
-/* Active Projects */ 
 
-.active-projects {
-    padding: 0 15px;
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 40px;
-    margin: 20px 0;
+
+.progress-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #E8E3DC;
+    border-radius: 999px;
 }
 
-.active-projects h2 {
-    grid-column: 1 / -1;
-}
-
-.project-card {
-    border-radius: 12px;
-    padding: 14px;
-}
-
-/* Schedule */
-
-.schedule {
-    grid-row: 3 / 4;
-    display: grid;
-    grid-template-rows: 40px repeat(auto-fit, minmax(100px, 1fr));
-    padding: 20px 0;
-    padding-right: 20px;
-    gap: 15px;
-}
-
-.schedule-card {
-    border-radius: 12px;
-    padding: 14px;
-}
-
-/* Recent Activity */
-
-.recent-activity {
-    grid-row: 4 / 5;
-    padding: 20px 0;
-    padding-right: 20px;
-    display: grid;
-    grid-template-rows: 40px repeat(auto-fit, minmax(30px, 1fr));
-    gap: 15px;
-}
-
-.recent-activity-card {
-    border-radius: 12px;
-    padding: 14px;
+.progress-fill {
+    width: 60%;
+    height: 100%;
+    background-color: #B86B4B;
+    border-radius: inherit;
 }
