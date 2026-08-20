@@ -29,9 +29,7 @@ main {
 
 
 
-.overview {
-    /* grid-column: 1 / 3; */
-}
+
 
 .active-projects {
     padding: 0 15px;
@@ -175,7 +173,6 @@ button[type="submit"] {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-    height: 125px;
 }
 
 .left-side-intro,
@@ -208,4 +205,24 @@ button[type="submit"] {
 .add-client-btn:hover,
 .schedule-btn:hover {
     background-color: #9F583C;
+}
+
+/* Overview */
+
+.overview {
+    grid-column: 1 / 3;
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.overview-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 1.2rem;
 }
