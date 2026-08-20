@@ -212,7 +212,7 @@ button[type="submit"] {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     display: grid;
-    grid-template-rows: 40px repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 40px repeat(auto-fit, minmax(80px, 1fr));
     gap: 20px;
 }
 
@@ -270,3 +270,41 @@ button[type="submit"] {
     background-color: #B86B4B;
     border-radius: inherit;
 }
+
+/* Typography */
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.overview-card {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.overview-card span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.project-name,
+.project {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.project-type,
+.deadline,
+.event,
+.date {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
