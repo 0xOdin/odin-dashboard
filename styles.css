@@ -22,9 +22,9 @@ main {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto 1fr 1fr;
     padding: 20px;
     gap: 20px;
+    /* resize: vertical; */
 }
 
 
@@ -42,7 +42,7 @@ main {
 aside {
     background-color: #1C1C1A;
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    /* grid-row: 1 / 3; */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -152,7 +152,6 @@ button[type="submit"] {
 
 .dashboard-intro {
     grid-column: 1 / 3;
-    grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
 }
@@ -193,21 +192,29 @@ button[type="submit"] {
 
 .overview {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 100px;
+    column-gap: 65px;
+}
+
+/* Main Column */ 
+
+.left-column {
+    grid-column: 1 / 2;
+}
+
+.right-column {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* Active Projects */ 
 
 .active-projects {
-    grid-column: 1 / 2;
-    grid-row: 3 / 5;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 40px;
-    grid-auto-rows: 200px;
     gap: 20px;
 }
 
@@ -215,23 +222,18 @@ button[type="submit"] {
     grid-column: 1 / -1;
 }
 
+
 /* Schedule */
 
 .schedule {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
     display: grid;
-    grid-template-rows: 40px repeat(auto-fit, minmax(80px, 1fr));
     gap: 20px;
 }
 
 /* Recent Activity */
 
 .recent-activity {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
     display: grid;
-    grid-template-rows: 40px repeat(auto-fit, minmax(20px, 1fr));
     gap: 20px;
 }
 
@@ -241,13 +243,16 @@ button[type="submit"] {
     display: grid;
     grid-template-rows: 1fr 1fr 2fr 1fr;
     align-items: center;
+    min-height: 200px;
 }
 
 .schedule-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
     gap: 8px;
+}
+
+.recent-activity-card {
+    display: grid;
 }
 
 .project-card,
@@ -258,9 +263,13 @@ button[type="submit"] {
     
 }
 
+.schedule-card p,
+.recent-activity-card p {
+    align-self: center;
+}
+
 .card {
     background-color: #FFFFFF;
-    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
     box-shadow: 0 4px 12px rgba(28, 28, 26, 0.08);
 }
 
